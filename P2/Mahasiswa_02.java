@@ -1,11 +1,21 @@
 package P2;
 
-public class Mahasiswa_02 {
+public class Mahasiswa_02{
 
         String nama;
         String nim;
         String kelas;
         double ipk;
+
+public Mahasiswa_02 () {
+}
+
+public Mahasiswa_02 (String nm, String nim, String kls, double ipk) {
+    nama = nm;
+    this.nim = nim;
+    kelas = kls;
+    this.ipk = ipk;
+}
 
     void tampilkanInformasi() {
         System.out.println("Nama: " + nama);
@@ -22,7 +32,7 @@ public class Mahasiswa_02 {
         if (IPKBaru >= 0.0 && IPKBaru <= 4.0) {
             ipk = IPKBaru;
         } else {
-            System.out.println("IPK tidak valid. Harus antara 0.0 dan 4.0");
+            System.out.println("IPK tidak valid. Harus antara 0.0 dan");
         }
     }
 
