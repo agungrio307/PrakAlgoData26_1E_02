@@ -19,5 +19,8 @@ public class MahasiswaMain_02 {
         Mahasiswa_02 mhs2 = new Mahasiswa_02("Annisa nabila", "2141720160", "TI 2L", 3.25);
         mhs2.updateIPK(3.30);
         mhs2.tampilkanInformasi();
+
+        Mahasiswa_02 mhsAgung = new Mahasiswa_02("Agung Satrio Gusti", "254107020228", "TI 1E", 3.95);
+        mhsAgung.tampilkanInformasi();
     }
 }
