@@ -68,7 +68,7 @@ public class DataDosen02 {
             }
         }
 
-        System.out.println("=== DOSEN PALING MUDA ===");
+        System.out.println("==== DOSEN PALING MUDA ====");
         dosenMuda.tampilData();
     }
 }
