@@ -31,4 +31,11 @@ public class MataKuliah02 {
         dummy = agung.nextLine();
         jumlahJam = Integer.parseInt(dummy);
     }
+
+    public void cetakInfo() {
+        System.out.println("Kode       : " + kode);
+        System.out.println("Nama       : " + nama);
+        System.out.println("SKS        : " + sks);
+        System.out.println("Jumlah Jam : " + jumlahJam);
+    }   
 }
