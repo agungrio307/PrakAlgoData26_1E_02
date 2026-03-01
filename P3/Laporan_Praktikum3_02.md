@@ -117,9 +117,32 @@
     <img width="348" height="450" alt="Screenshot 2026-03-01 at 14 44 53" src="https://github.com/user-attachments/assets/07bff022-ffd1-4ceb-93ec-664b9f272ab0" />
 
 ## Tugas 1
-    <h6> Kode Dosen02 <br>
+<h6> Kode Dosen02 <br>
     <br>
-    <img width="681" height="429" alt="Screenshot 2026-03-01 at 15 03 22" src="https://github.com/user-attachments/assets/fab8b9b2-bcd2-47c6-8829-28bce962f558" />
+  <img width="681" height="429" alt="Screenshot 2026-03-01 at 15 03 22" src="https://github.com/user-attachments/assets/40c508d0-14eb-456f-a930-fa2ca1236c8f" />
+    <h6> Kode DosenDemo02 <br>
+    <br>
+    <img width="736" height="586" alt="Screenshot 2026-03-01 at 15 04 02" src="https://github.com/user-attachments/assets/f813a245-a938-4ac8-83fe-5f20bf5fe64b" />
+    <h6> Hasil Runningan <br>
+    <br>
+    <img width="353" height="605" alt="Screenshot 2026-03-01 at 15 04 38" src="https://github.com/user-attachments/assets/d11a2212-d40e-4f2e-a0c4-61f10acb7681" />
+
+## Tugas 2
+<h6> Kode Dosen02 <br>
+    <br>
+  <img width="681" height="429" alt="Screenshot 2026-03-01 at 15 03 22" src="https://github.com/user-attachments/assets/40c508d0-14eb-456f-a930-fa2ca1236c8f" />
+    <h6> Kode DataDosen02 <br>
+    <br>
+    <img width="607" height="747" alt="Screenshot 2026-03-01 at 15 28 58" src="https://github.com/user-attachments/assets/28222375-4e14-4c2f-882f-bcc66ded94d5" />
+    <img width="789" height="608" alt="Screenshot 2026-03-01 at 15 30 19" src="https://github.com/user-attachments/assets/7014b400-d036-43dc-a825-2a31a9fd400f" />
+    <h6> Kode DosenDemo02 <br>
+    <br>
+    <img width="747" height="701" alt="Screenshot 2026-03-01 at 15 31 06" src="https://github.com/user-attachments/assets/8a65d1d2-23ef-479f-b130-f789b0332b3a" />
+    <h6> Hasil Runningan <br>
+    <br>
+    <img width="354" height="767" alt="Screenshot 2026-03-01 at 15 33 25" src="https://github.com/user-attachments/assets/46828426-a020-408b-84fd-a55ae7408a57" />
+
+
 
 
 
