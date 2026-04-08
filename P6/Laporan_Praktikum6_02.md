@@ -90,3 +90,64 @@
    <br>
   Modifikasi kode MahasiswaDemo02 <br>
   <img width="721" height="769" alt="Screenshot 2026-04-06 at 23 36 34" src="https://github.com/user-attachments/assets/a2004b5f-40dc-4025-b09c-075f37df5787" />
+
+## Percobaan 3
+<h6> Kode MahasiswaBerprestasi02 <br>
+<br>
+<img width="565" height="698" alt="Screenshot 2026-04-07 at 08 14 25" src="https://github.com/user-attachments/assets/1bd2b756-1c64-46db-93ce-41829c74934e" />
+<img width="509" height="262" alt="Screenshot 2026-04-07 at 08 14 51" src="https://github.com/user-attachments/assets/c026ae3e-97b3-4a50-85b6-e88412c555cc" />
+<h6> Kode MahasiswaDemo02 <br>
+<br>
+<img width="724" height="730" alt="Screenshot 2026-04-07 at 08 15 48" src="https://github.com/user-attachments/assets/bbd321a1-fb58-433d-afe2-2edf2982a6f8" />
+<img width="754" height="111" alt="Screenshot 2026-04-07 at 08 16 15" src="https://github.com/user-attachments/assets/13193829-14b5-4255-97a3-827d2aecd229" />
+<h6> Hasil Runningan <br>
+<br>
+<img width="242" height="552" alt="Screenshot 2026-04-07 at 08 18 41" src="https://github.com/user-attachments/assets/b71fa2dc-9286-44bd-b719-64eaa7810a54" />
+<img width="427" height="521" alt="Screenshot 2026-04-07 at 08 19 20" src="https://github.com/user-attachments/assets/7822b6c8-d2e8-42cd-b1cc-13a0f68fba90" />
+<img width="454" height="102" alt="Screenshot 2026-04-07 at 08 19 58" src="https://github.com/user-attachments/assets/5c17e2b2-b546-42c9-9afe-02016c58a372" />
+
+<h6> Pertanyaan 
+
+1. Proses ini digunakan untuk: <br>
+   Mencari posisi (index) mahasiswa dengan IPK paling kecil dari bagian array yang      belum terurut. <br>
+   Kode tersebut berfungsi untuk menentukan elemen dengan nilai IPK terkecil pada       setiap iterasi selection sort sebelum dilakukan pertukaran (swap).
+
+## Percobaan 4
+<h6> Kode MahasiswaBerprestasi <br>
+<br>
+<img width="570" height="701" alt="Screenshot 2026-04-08 at 09 39 18" src="https://github.com/user-attachments/assets/8f4c8034-b1ff-46ea-a6f9-de598beec453" />
+<img width="515" height="482" alt="Screenshot 2026-04-08 at 09 40 14" src="https://github.com/user-attachments/assets/6eb8f09a-1a3b-4742-95f8-60e3b9cfb4d3" />
+<h6> Kode MahasiswaDemo02 <br>
+<br>
+<img width="726" height="728" alt="Screenshot 2026-04-08 at 09 41 18" src="https://github.com/user-attachments/assets/193faabb-3032-4d27-92fa-334fc40ec19e" />
+<img width="760" height="178" alt="Screenshot 2026-04-08 at 09 41 36" src="https://github.com/user-attachments/assets/23e309de-af12-4e1d-a0a3-0dc216c0d2c5" />
+<h6> Hasil Runningan <br>
+<br>
+<img width="248" height="536" alt="Screenshot 2026-04-08 at 09 47 48" src="https://github.com/user-attachments/assets/6cbdad64-2c83-4fe1-ab20-80fc84138b37" />
+<img width="425" height="439" alt="Screenshot 2026-04-08 at 09 48 25" src="https://github.com/user-attachments/assets/f46df31b-96a9-4b8a-a7f2-721515d414de" />
+<img width="425" height="439" alt="Screenshot 2026-04-08 at 09 48 25" src="https://github.com/user-attachments/assets/76810137-f79a-40f9-987c-c6d5fa98566e" />
+
+<h6> Pertanyaan
+
+
+1. <img width="503" height="232" alt="Screenshot 2026-04-08 at 09 51 17" src="https://github.com/user-attachments/assets/caf06ba0-f9de-4df8-a4f6-e8815a0e91f5" />
+Sebelumnya: listMhs[j-1].ipk > temp.ipk → ascending (kecil ke besar) <br>
+Sekarang: listMhs[j-1].ipk < temp.ipk → descending (besar ke kecil)
+
+## Latihan Praktikum 1
+<h6> Kode Dosen02 <br>
+<br>
+<img width="757" height="431" alt="Screenshot 2026-04-08 at 12 57 47" src="https://github.com/user-attachments/assets/9e2b5e6c-bda7-4d00-981b-92bcd0e91212" />
+<h6> Kode DataDosen02 <br>
+<br>
+<img width="535" height="622" alt="Screenshot 2026-04-08 at 12 59 20" src="https://github.com/user-attachments/assets/305a1293-00c4-4796-85e7-c761baa3736e" />
+<img width="535" height="622" alt="Screenshot 2026-04-08 at 12 59 20" src="https://github.com/user-attachments/assets/f9cf6339-8e6a-4d40-b68f-d5c5ea7a5b6a" />
+<h6> Kode MainDosen02 <br>
+<br>
+<img width="632" height="753" alt="Screenshot 2026-04-08 at 13 01 04" src="https://github.com/user-attachments/assets/528024de-6125-4c2e-ac88-f44fc3371c62" />
+<img width="611" height="432" alt="Screenshot 2026-04-08 at 13 02 00" src="https://github.com/user-attachments/assets/af0fa4f1-1c98-477a-b34d-df2c9ff365ce" />
+<h6> Hasil Runningan <br>
+<br>
+<img width="313" height="759" alt="Screenshot 2026-04-08 at 13 07 28" src="https://github.com/user-attachments/assets/74189adf-05e2-4b6a-b696-773ab52064bb" />
+<img width="265" height="486" alt="Screenshot 2026-04-08 at 13 08 29" src="https://github.com/user-attachments/assets/6578839c-0b88-4543-b330-d9d34a4b9c8f" />
+<img width="272" height="468" alt="Screenshot 2026-04-08 at 13 08 58" src="https://github.com/user-attachments/assets/dae81cd2-6b85-44b4-8fd0-b5034d2045ad" />
