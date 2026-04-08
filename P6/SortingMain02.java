@@ -15,25 +15,25 @@ public class SortingMain02 {
 
     SortingMain02() {
         System.out.println("Data awal 1");
-        dataurut1.tampil();
+        dataurut1.tampill();
         dataurut1.bubbleSort();
         System.out.println("Data sudah diurutkan dengan BUBBLE SORT (ASC)");
-        dataurut1.tampil();
+        dataurut1.tampill();
 
         System.out.println();
 
         System.out.println("Data awal 2");
-        dataurut2.tampil();
+        dataurut2.tampill();
         dataurut2.SelectionSort();
         System.out.println("Data sudah diurutkan dengan SELECTION SORT (ASC)");
-        dataurut2.tampil();
+        dataurut2.tampill();
 
         System.out.println();
 
         System.out.println("Data awal 3");
-        dataurut3.tampil();
+        dataurut3.tampill();
         dataurut3.insertionSort();
         System.out.println("Data sudah diurutkan dengan INSERTION SORT (ASC)");
-        dataurut3.tampil();
+        dataurut3.tampill();
     }
 }

@@ -52,7 +52,7 @@ public class Sorting02 {
         }
     }
 
-    void tampil(){
+    void tampill(){
         for (int i = 0; i < jumData; i++) {
             System.out.print(data[i] + " ");
         }
