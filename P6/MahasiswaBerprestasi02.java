@@ -37,9 +37,9 @@ public class MahasiswaBerprestasi02 {
     }
 
     void selectionSort() {
-        for (int i = 0; i < listMhs.length - 1; i++) {
+        for (int i = 0; i < idx - 1; i++) {
             int idxmin = i;
-            for (int j = i + 1; j < listMhs.length; j++) {
+            for (int j = i + 1; j < idx; j++) {
                 if (listMhs[j].ipk < listMhs[idxmin].ipk) {
                     idxmin = j;
                 }
@@ -51,7 +51,7 @@ public class MahasiswaBerprestasi02 {
     } 
     
     void insertionSort() {
-        for (int i = 1; i < listMhs.length; i++) {
+        for (int i = 1; i < idx; i++) {
             Mahasiswa02 temp = listMhs[i];
             int j = i;
             while (j > 0 && listMhs[j-1].ipk < temp.ipk) {
@@ -64,7 +64,7 @@ public class MahasiswaBerprestasi02 {
 
     int sequentialSearching(double cari) {
         int posisi = -1;
-        for (int j = 0; j < listMhs.length; j++) {
+        for (int j = 0; j < idx; j++) {
             if (listMhs[j].ipk == cari) {
                 posisi = j;
                 break;
@@ -90,5 +90,22 @@ public class MahasiswaBerprestasi02 {
         } else {
             System.out.println("data mahasiswa dengan IPK " + x + " tidak ditemukan");
         }
+    }
+
+    int findBinarySearch(double cari, int left, int right) {
+        int mid;
+        if (right >= left) {
+            mid = left + (right - left) / 2;
+            if (cari == listMhs[mid].ipk) {
+                return mid;
+            }
+            else if (listMhs[mid].ipk > cari) {
+                return findBinarySearch(cari, left, mid - 1);
+            }
+            else {
+            return findBinarySearch(cari, mid + 1, right);
+            }
+        }
+        return -1;
     }
 }
