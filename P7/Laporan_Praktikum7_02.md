@@ -26,4 +26,12 @@
    - Method tampilDataSearch <br>
      Output: Detail mahasiswa <br>
      Tujuan: Mengetahui isi data <br>
-2. 
+2. break digunakan untuk keluar dari loop saat data sudah ditemukan, sehingga           pencarian berhenti tepat saat itu juga. <br>
+   Penjelasan alurnya: <br>
+   -> Program sedang melakukan pencarian (sequential searching) dalam array listMhs.     <br>
+   -> Jika ditemukan data dengan ipk yang sama dengan nilai cari: <br>
+      posisi diset ke indeks saat ini (j) <br>
+      lalu break dijalankan
+3. Fungsi variabel pos / posisi: <br>
+   Variabel ini digunakan untuk menyimpan indeks (letak) data yang ditemukan dalam      array.
+   
