@@ -4,7 +4,7 @@ import java.util.Scanner;
 // Class utama untuk menjalankan program
 public class Main {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner agung = new Scanner(System.in);
 
         // ================= DATA AWAL =================
 
@@ -23,13 +23,14 @@ public class Main {
                 new Buku02("B004", "Fisika", 2024)
         };
 
-        // Array objek Peminjaman02
+        // Jawaban sesi 2 (A)
+        // Array objek Peminjaman02 (ditambahkan status membership)
         Peminjaman02[] pinjam = {
-                new Peminjaman02(mhs[0], buku[0], 7),
-                new Peminjaman02(mhs[1], buku[1], 3),
-                new Peminjaman02(mhs[2], buku[2], 10),
-                new Peminjaman02(mhs[2], buku[3], 6),
-                new Peminjaman02(mhs[0], buku[1], 4)
+                new Peminjaman02(mhs[0], buku[0], 7, true),   // Andi = member
+                new Peminjaman02(mhs[1], buku[1], 3, false),  // Budi = non-member
+                new Peminjaman02(mhs[2], buku[2], 10, true),  // Citra = member
+                new Peminjaman02(mhs[2], buku[3], 6, false),  // Citra = non-member
+                new Peminjaman02(mhs[0], buku[1], 4, true)    // Andi = member
         };
 
         int pilih;
@@ -42,10 +43,13 @@ public class Main {
             System.out.println("3. Tampilkan Peminjaman");
             System.out.println("4. Urutkan Berdasarkan Denda");
             System.out.println("5. Cari Berdasarkan NIM");
+            // Jawaban sesi 2 (B) 
+            // ditambahkan menu untuk mencari berdasarkan judul buku
+            System.out.println("6. Cari Berdasarkan Judul Buku");
             System.out.println("0. Keluar");
             System.out.print("Pilih: ");
-            pilih = sc.nextInt();
-            sc.nextLine();
+            pilih = agung.nextInt();
+            agung.nextLine();
 
             switch (pilih) {
 
@@ -96,7 +100,7 @@ public class Main {
                 // ===== MENU 5 (SEARCHING) =====
                 case 5:
                     System.out.print("Masukkan NIM: ");
-                    String cari = sc.nextLine();
+                    String cari = agung.nextLine();
                     boolean ketemu = false;
 
                     // Sequential Search
@@ -108,6 +112,32 @@ public class Main {
                     }
 
                     if (!ketemu) {
+                        System.out.println("Data tidak ditemukan");
+                    }
+                    break;
+
+                // Jawaban sesi 2 (B)
+                // ===== MENU 6 (SEARCHING JUDUL BUKU - SEQUENTIAL SEARCH) =====
+                case 6:
+                    System.out.print("Masukkan Judul Buku: ");
+                    String cariJudul = agung.nextLine();
+                    boolean ditemukan = false;
+
+                    // Sequential Search (case-insensitive)
+                    for (int i = 0; i < pinjam.length; i++) {
+                        // menggunakan equalsIgnoreCase
+                        if (pinjam[i].buku.judul.equalsIgnoreCase(cariJudul)) {
+                            // menampilkan detail lengkap transaksi
+                            System.out.println("Nama: " + pinjam[i].mhs.nama +
+                                    " | Judul: " + pinjam[i].buku.judul +
+                                    " | Lama Pinjam: " + pinjam[i].lamaPinjam +
+                                    " hari | Denda: " + pinjam[i].denda);
+                            ditemukan = true;
+                        }
+                    }
+
+                    // jika tidak ditemukan
+                    if (!ditemukan) {
                         System.out.println("Data tidak ditemukan");
                     }
                     break;
