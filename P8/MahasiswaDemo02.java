@@ -13,16 +13,17 @@ public class MahasiswaDemo02 {
             System.out.println("2. Menilai Tugas");
             System.out.println("3. Melihat Tugas Teratas");
             System.out.println("4. Melihat Daftar Tugas");
-            System.out.println("Pilih: ");
+            System.out.println("5. Melihat Tugas Terbawah");
+            System.out.print("Pilih: ");
             pilih = scan.nextInt();
             scan.nextLine();
             switch (pilih) {
                 case 1:
-                    System.out.println("Nama: ");
+                    System.out.print("Nama: ");
                     String nama = scan.nextLine();
-                    System.out.println("NIM: ");
+                    System.out.print("NIM: ");
                     String nim = scan.nextLine();
-                    System.out.println("Kelas: ");
+                    System.out.print("Kelas: ");
                     String kelas = scan.nextLine();
                     Mahasiswa02 mhs = new Mahasiswa02(nama, nim, kelas);
                     stack.push(mhs);
@@ -32,9 +33,9 @@ public class MahasiswaDemo02 {
                     Mahasiswa02 dinilai = stack.pop();
                     if (dinilai != null) {
                         System.out.println("Menilai tugas dari " + dinilai.nama);
-                        System.out.println("Masukkan nilai (0-100): ");
+                        System.out.print("Masukkan nilai (0-100): ");
                         int nilai = scan.nextInt();
-                        dinilai.tugasDinilai(nilai);
+                        dinilai.beriNilai(nilai);
                         System.out.printf("Nilai Tugas %s adalah %d\n", dinilai.nama, nilai);
                     }
                     break;
@@ -49,9 +50,15 @@ public class MahasiswaDemo02 {
                     System.out.println("Nama\tNIM\tKelas");
                     stack.print();
                     break;
+                case 5:
+                    Mahasiswa02 mhsBawah = stack.peekBottom();
+                    if (mhsBawah != null) {
+                        System.out.println("Tugas pertama dikumpulkan oleh: " + mhsBawah.nama);
+                    }
+                    break;
                 default:
                     System.out.println("Pilihan tidak valid!");
             }
-        } while (pilih >= 1 && pilih <= 4);
+        } while (pilih >= 1 && pilih <= 5);
     }
 }
