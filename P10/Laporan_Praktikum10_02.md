@@ -69,3 +69,22 @@
    <img width="755" height="318" alt="Screenshot 2026-04-30 at 00 04 16" src="https://github.com/user-attachments/assets/1af3e87a-db37-44a5-9b18-fc76b8461c44" />
 
 ## Tugas Praktikum 1
+<h6> Kode Mahasiswa02 <br>
+<br>
+<img width="646" height="366" alt="Screenshot 2026-04-29 at 23 56 01" src="https://github.com/user-attachments/assets/8857ed32-d2dc-477c-8a15-1b240770875c" />
+<h6> Kode AntrianKRS02 <br>
+<br>
+<img width="481" height="762" alt="Screenshot 2026-04-30 at 08 38 42" src="https://github.com/user-attachments/assets/b73e453f-3bb6-427c-9cd9-e3f02d16f620" />
+<img width="549" height="712" alt="Screenshot 2026-04-30 at 08 38 59" src="https://github.com/user-attachments/assets/eabffbb7-cf2e-47f8-baaf-b2cdd7102436" />
+<img width="651" height="399" alt="Screenshot 2026-04-30 at 08 39 25" src="https://github.com/user-attachments/assets/bfb11e81-0378-4b49-bab5-55bde37d4e8b" />
+<h6> KodeMainKRS02 <br>
+<br>
+<img width="629" height="764" alt="Screenshot 2026-04-30 at 08 39 40" src="https://github.com/user-attachments/assets/1c13bc67-18cf-4b19-a7f3-28d88ffb514a" />
+<img width="422" height="657" alt="Screenshot 2026-04-30 at 08 39 56" src="https://github.com/user-attachments/assets/5bf72e5e-ed90-44d7-af7c-b9f9a4f5a6d2" />
+<h6> Hasil Runningan <br>
+<br>
+<img width="188" height="576" alt="Screenshot 2026-04-30 at 08 41 49" src="https://github.com/user-attachments/assets/dcb3fa97-64ca-44e2-b914-bf6e41ec684d" />
+<img width="211" height="506" alt="Screenshot 2026-04-30 at 08 42 10" src="https://github.com/user-attachments/assets/29663732-54a4-4a3f-8d55-c205953cfa94" />
+<img width="234" height="671" alt="Screenshot 2026-04-30 at 08 42 24" src="https://github.com/user-attachments/assets/c84c189b-eace-44f8-8909-f166d3c125ca" />
+<img width="191" height="610" alt="Screenshot 2026-04-30 at 08 42 38" src="https://github.com/user-attachments/assets/92c2c89b-db47-442e-a42c-9f3617b53049" />
+<img width="187" height="593" alt="Screenshot 2026-04-30 at 08 42 51" src="https://github.com/user-attachments/assets/60501992-8bfd-4209-9fbf-3331c97dc894" />
