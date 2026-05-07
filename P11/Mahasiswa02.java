@@ -9,7 +9,7 @@ public class Mahasiswa02 {
     Mahasiswa02() {
     }
 
-    Mahasiswa02(String nm, String name, String kls, double ip) {
+    Mahasiswa02(String nm, String name, String kls, double ip){
         nim = nm;
         nama = name;
         kelas = kls;
@@ -18,5 +18,5 @@ public class Mahasiswa02 {
 
     void tampilInformasi() {
         System.out.println(nama + "\t\t" + nim + "\t\t" + kelas + "\t\t" + ipk);
-    }   
+    }
 }
