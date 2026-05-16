@@ -102,4 +102,16 @@ public class DoubleLinkedList02 {
             current = current.next;
         }
     }
+
+    public void printReverse() {
+        if (isEmpty()) {
+            System.out.println("Linked List masih kosong");
+            return;
+        }
+        Node02 current = tail;
+        while (current != null) {
+            current.data.tampil();
+            current = current.prev;
+        }
+    }
 }
