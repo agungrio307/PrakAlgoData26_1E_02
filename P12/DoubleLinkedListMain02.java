@@ -30,6 +30,13 @@ public class DoubleLinkedListMain02 {
             System.out.println("4. Hapus data di awal");
             System.out.println("5. Hapus data di akhir");
             System.out.println("6. Tampilkan data");
+            System.out.println("7. Tambah data di index tertentu");
+            System.out.println("8. Hapus data di index tertentu");
+            System.out.println("9. Hapus setelah NIM tertentu");
+            System.out.println("10. Tampil data pertama");
+            System.out.println("11. Tampil data terakhir");
+            System.out.println("12. Tampil data berdasarkan index");
+            System.out.println("13. Tampil jumlah data");
             System.out.println("0. Keluar");
             System.out.print("Pilih menu : ");
             pilihan = agung.nextInt();
@@ -59,6 +66,45 @@ public class DoubleLinkedListMain02 {
                     break;
                 case 6:
                     list.print();
+                    break;
+                case 7:
+                    System.out.print("Masukkan index : ");
+                    int idxAdd = agung.nextInt();
+                    agung.nextLine();
+                    Mahasiswa02 mAdd = inputMahasiswa(agung);
+                    list.add(idxAdd, mAdd);
+                    break;
+
+                case 8:
+                    System.out.print("Masukkan index : ");
+                    int idxDel = agung.nextInt();
+                    agung.nextLine();
+                    list.remove(idxDel);
+                    break;
+
+                case 9:
+                    System.out.print("Masukkan NIM : ");
+                    String key = agung.nextLine();
+                    list.removeAfter(key);
+                    break;
+
+                case 10:
+                    list.getFirst();
+                    break;
+
+                case 11:
+                    list.getLast();
+                    break;
+
+                case 12:
+                    System.out.print("Masukkan index : ");
+                    int idxGet = agung.nextInt();
+                    agung.nextLine();
+                    list.getIndex(idxGet);
+                    break;
+
+                case 13:
+                    System.out.println("Jumlah data : " + list.getSize());
                     break;
                 case 0:
                     System.out.println("Progam selesai.");
