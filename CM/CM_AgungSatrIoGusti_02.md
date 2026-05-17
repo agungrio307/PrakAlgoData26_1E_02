@@ -3,32 +3,33 @@
   <h4> NIM: 254107020228
   <h4> Kelas: TI-1E
 
-## Kode Pembeli02
-<img width="631" height="338" alt="Screenshot 2026-05-17 at 12 34 44" src="https://github.com/user-attachments/assets/22c64f88-2bcb-405b-bb27-d3a8d9d877a9" />
+## Kode Pembeli02 (Beserta Penjelasan)
+<img width="632" height="569" alt="image" src="https://github.com/user-attachments/assets/39f8ffec-6482-4628-95f4-eee4c726bb4d" />
 
-## Kode Pesanan02
-<img width="725" height="375" alt="image" src="https://github.com/user-attachments/assets/21089423-cf52-4d9e-a4f9-4a4f76c491ad" />
+## Kode Pesanan02 (Beserta Penjelasan)
+<img width="729" height="675" alt="image" src="https://github.com/user-attachments/assets/6c90140c-6331-4834-994b-e9eb2904cb66" />
 
-## Kode NodePembeli02
-<img width="669" height="264" alt="image" src="https://github.com/user-attachments/assets/87afb201-2997-42d5-a876-65cc11ff73de" />
+## Kode NodePembeli02 (Beserta Penjelasan)
+<img width="674" height="455" alt="image" src="https://github.com/user-attachments/assets/34c61bf5-72c1-4ffe-8d7c-5cd42d1018e2" />
 
-## Kode NodePesanan02
-<img width="670" height="261" alt="image" src="https://github.com/user-attachments/assets/c648099b-cbd6-4399-a4e7-d83fe746ec48" />
+## Kode NodePesanan02 (Beserta Penjelasan)
+<img width="670" height="457" alt="image" src="https://github.com/user-attachments/assets/5f349153-3dab-425b-a552-727a1e8b82ac" />
 
-## Kode DLLPembeli02
-<img width="645" height="751" alt="Screenshot 2026-05-17 at 12 38 26" src="https://github.com/user-attachments/assets/c1a23475-bd7d-4e92-a86c-1e6486703b6b" />
-<img width="359" height="533" alt="Screenshot 2026-05-17 at 12 38 41" src="https://github.com/user-attachments/assets/d49b28dd-aef8-49e6-8668-82105a5205b3" />
+## Kode DLLPembeli02 (Beserta Penjelasan)
+<img width="645" height="497" alt="Screenshot 2026-05-17 at 13 02 26" src="https://github.com/user-attachments/assets/da244285-a18c-4609-9ec1-60b4bc0b3b7d" />
+<img width="626" height="711" alt="Screenshot 2026-05-17 at 13 02 42" src="https://github.com/user-attachments/assets/ce0bb6cb-13ae-43ea-898e-480d18b5241e" />
+<img width="377" height="246" alt="Screenshot 2026-05-17 at 13 02 51" src="https://github.com/user-attachments/assets/3c4ecd71-5293-479c-ba76-79ecb686fee9" />
 
-## Kode DLLPesanan02
-<img width="647" height="408" alt="Screenshot 2026-05-17 at 12 39 29" src="https://github.com/user-attachments/assets/4c6e5145-674f-4779-b9db-95368c714733" />
-<img width="548" height="514" alt="Screenshot 2026-05-17 at 12 39 42" src="https://github.com/user-attachments/assets/df654686-f1d2-419e-a6f6-66d338ad9170" />
-<img width="697" height="496" alt="Screenshot 2026-05-17 at 12 39 55" src="https://github.com/user-attachments/assets/ee6323dd-e644-4ba4-9b59-31eaf1592486" />
+## Kode DLLPesanan02 (Beserta Penjelasan)
+<img width="648" height="496" alt="Screenshot 2026-05-17 at 13 03 35" src="https://github.com/user-attachments/assets/3a145428-62fc-42dd-b217-42db0fd764c6" />
+<img width="548" height="580" alt="Screenshot 2026-05-17 at 13 03 52" src="https://github.com/user-attachments/assets/da2bf000-fab6-4364-a3c4-26116cf8f8a8" />
+<img width="695" height="547" alt="Screenshot 2026-05-17 at 13 04 05" src="https://github.com/user-attachments/assets/0454db19-4154-4ed1-bc8f-e98f40aa60ab" />
 
-## Kode MainRoyalDelish02
-<img width="572" height="603" alt="Screenshot 2026-05-17 at 12 40 43" src="https://github.com/user-attachments/assets/8e5cfe30-359d-4b9a-94ea-0614cb9a4cb3" />
-<img width="812" height="400" alt="Screenshot 2026-05-17 at 12 41 01" src="https://github.com/user-attachments/assets/2d14c575-e5c1-422f-8964-3c75a48b420d" />
-<img width="841" height="605" alt="Screenshot 2026-05-17 at 12 41 17" src="https://github.com/user-attachments/assets/1323e793-2ebe-413f-9232-4515add0335c" />
-<img width="548" height="247" alt="Screenshot 2026-05-17 at 12 41 26" src="https://github.com/user-attachments/assets/e5df4aa9-467b-458d-a9ad-01c125fe27b2" />
+## Kode MainRoyalDelish02 (Beserta Penjelasan)
+<img width="580" height="783" alt="Screenshot 2026-05-17 at 13 05 01" src="https://github.com/user-attachments/assets/1ff54112-1b05-41a6-9b4a-4369a6bcb343" />
+<img width="805" height="532" alt="Screenshot 2026-05-17 at 13 05 18" src="https://github.com/user-attachments/assets/a1d29f1d-d502-40f8-8b88-6f45c9fa40dd" />
+<img width="844" height="635" alt="Screenshot 2026-05-17 at 13 05 29" src="https://github.com/user-attachments/assets/bf6e96cc-4a04-4a3e-9ba3-f653f035e32e" />
+<img width="686" height="429" alt="Screenshot 2026-05-17 at 13 05 41" src="https://github.com/user-attachments/assets/3ca9d199-72d3-4864-94ab-8c7c80b12934" />
 
 ## Hasil Runningan
 <img width="346" height="738" alt="Screenshot 2026-05-17 at 12 42 37" src="https://github.com/user-attachments/assets/5f02208c-07dd-49a2-8a56-975a0b09b0ca" />
