@@ -25,6 +25,6 @@ public class Pembeli02 {
     // Method untuk menampilkan data pembeli
     public void tampil() {
         // Menampilkan nomor antrean, nama pembeli, dan nomor HP
-        System.out.println(noAntrian + "\t\t" + namaPembeli + "\t\t" + noHp);
+        System.out.println(noAntrian + "\t\t" + namaPembeli + "\t\t" + noHp + "\t\t");
     }
 }

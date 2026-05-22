@@ -35,7 +35,7 @@ public class DLLPembeli02 {
         System.out.println("===============================");
         System.out.println("Dafttar Antrian Pembeli");
         System.out.println("===============================");
-        System.out.println("No Antrian" + "\t" + "Nama" + "\t\t" + "No HP");
+        System.out.println("No Antrian" + "\t" + "Nama" + "\t\t" + "No HP" + "\t\t");
 
         NodePembeli02 current = head;
 

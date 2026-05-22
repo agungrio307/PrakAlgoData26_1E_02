@@ -13,6 +13,8 @@ public class MainRoyalDelish02 {
         DLLPembeli02 antrian = new DLLPembeli02();
         // Struktur data pesanan
         DLLPesanan02 daftarPesanan = new DLLPesanan02();
+        // Struktur data rekap antrian per jam
+        LinkedListRekapAntrian02 rekapAntrian = new LinkedListRekapAntrian02();
 
         // Variabel untuk nomor antrian otomatis
         int nomorAntrian = 1;
@@ -31,6 +33,7 @@ public class MainRoyalDelish02 {
             System.out.println("2. Cetak Antrian");
             System.out.println("3. Hapus Antrian dan Pesan");
             System.out.println("4. Laporan Pesanan");
+            System.out.println("5. Rekap antrian terbanyak per jam");
             System.out.println("0. Keluar");
             // Input pilihan menu dari user
             System.out.print("Pilih menu : ");
@@ -52,10 +55,18 @@ public class MainRoyalDelish02 {
                     String hp = agung.nextLine();
                     // Input nomor HP pembeli
 
+                    System.out.print("Jam Antri    : ");
+                    int jam = agung.nextInt();
+                    agung.nextLine();
+                    // Input jam antrian pembeli
+
                     Pembeli02 p = new Pembeli02(nomorAntrian, nama, hp);
 
                     antrian.addLast(p);
                     // Menambahkan pembeli ke dalam antrian
+
+                    // Memperbarui rekap antrian per jam
+                    rekapAntrian.tambahAtauUpdate(jam);
 
                     System.out.println("Antrian berhasil ditambahkan dengan nomor: " + nomorAntrian);
 
@@ -112,6 +123,11 @@ public class MainRoyalDelish02 {
 
                     daftarPesanan.print();
 
+                    break;
+
+                case 5:
+                    // Menampilkan jam dengan antrian terbanyak
+                    rekapAntrian.tampilkanJamTerbanyak();
                     break;
 
                 // Keluar dari program
