@@ -56,7 +56,11 @@ public class LinkedListRekapAntrian02 {
         }
 
         // Menampilkan hasil rekap antrian
+        System.out.println("===============================");
+        System.out.println("Rekap Antrian Per Jam");
+        System.out.println("===============================");
         System.out.println("Jam dengan antrian terbanyak : " + max.jam);
         System.out.println("Jumlah antrian               : " + max.jumlah);
+        System.out.println("===============================");
     }
 }
