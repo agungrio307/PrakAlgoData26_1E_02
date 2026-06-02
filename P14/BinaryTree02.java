@@ -37,6 +37,24 @@ public class BinaryTree02 {
         }
     }
 
+    public void addRekursif(Mahasiswa02 mahasiswa) {
+        root = addRekursif(root, mahasiswa);
+    }
+
+    private Node02 addRekursif(Node02 current, Mahasiswa02 mahasiswa) {
+        if (current == null) {
+            return new Node02(mahasiswa);
+        }
+
+        if (mahasiswa.ipk < current.mahasiswa.ipk) {
+            current.left = addRekursif(current.left, mahasiswa);
+        } else {
+            current.right = addRekursif(current.right, mahasiswa);
+        }
+
+        return current;
+    }
+
     boolean find(double ipk) {
         boolean result = false;
         Node02 current = root;
@@ -51,6 +69,48 @@ public class BinaryTree02 {
             }
         }
         return result;
+    }
+
+    Mahasiswa02 cariMinIPK() {
+        if (isEmpty()) {
+            return null;
+        }
+
+        Node02 current = root;
+        while (current.left != null) {
+            current = current.left;
+        }
+
+        return current.mahasiswa;
+    }
+
+    Mahasiswa02 cariMaxIPK() {
+        if (isEmpty()) {
+            return null;
+        }
+
+        Node02 current = root;
+        while (current.right != null) {
+            current = current.right;
+        }
+
+        return current.mahasiswa;
+    }
+
+    void tampilMahasiswaIPKdiAtas(double ipkBatas) {
+        tampilMahasiswaIPKdiAtas(root, ipkBatas);
+    }
+
+    private void tampilMahasiswaIPKdiAtas(Node02 node, double ipkBatas) {
+        if (node != null) {
+            tampilMahasiswaIPKdiAtas(node.left, ipkBatas);
+
+            if (node.mahasiswa.ipk > ipkBatas) {
+                node.mahasiswa.tampilInformasi();
+            }
+
+            tampilMahasiswaIPKdiAtas(node.right, ipkBatas);
+        }
     }
 
     void traversePreOrder(Node02 node) {
