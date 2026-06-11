@@ -11,8 +11,11 @@ public class BinaryTree02 {
         return this.root == null;
     }
     
-    public void add(Mahasiswa02 mahasiswa) {
-        Node02 newNode = new Node02(mahasiswa);
+    // MODIFIKASI:
+    // Data BST diubah dari Mahasiswa menjadi Produk
+    // Pengurutan BST berdasarkan atribut harga produk
+    public void add(Produk02 produk) {
+        Node02 newNode = new Node02(produk);
         if (isEmpty()) {
             root = newNode;
         } else {
@@ -20,7 +23,7 @@ public class BinaryTree02 {
             Node02 parent = null;
             while (true) {
                 parent = current;
-                if (mahasiswa.ipk < current.mahasiswa.ipk) {
+                if (produk.harga < current.produk.harga) {
                     current = current.left;
                     if (current == null) {
                         parent.left = newNode;
@@ -37,32 +40,32 @@ public class BinaryTree02 {
         }
     }
 
-    public void addRekursif(Mahasiswa02 mahasiswa) {
-        root = addRekursif(root, mahasiswa);
+    public void addRekursif(Produk02 produk) {
+        root = addRekursif(root, produk);
     }
 
-    private Node02 addRekursif(Node02 current, Mahasiswa02 mahasiswa) {
+    private Node02 addRekursif(Node02 current, Produk02 produk) {
         if (current == null) {
-            return new Node02(mahasiswa);
+            return new Node02(produk);
         }
 
-        if (mahasiswa.ipk < current.mahasiswa.ipk) {
-            current.left = addRekursif(current.left, mahasiswa);
+        if (produk.harga < current.produk.harga) {
+            current.left = addRekursif(current.left, produk);
         } else {
-            current.right = addRekursif(current.right, mahasiswa);
+            current.right = addRekursif(current.right, produk);
         }
 
         return current;
     }
 
-    boolean find(double ipk) {
+    boolean find(double harga) {
         boolean result = false;
         Node02 current = root;
         while (current != null) {
-            if (current.mahasiswa.ipk == ipk) {
+            if (current.produk.harga == harga) {
                 result = true;
                 break;
-            } else if (ipk > current.mahasiswa.ipk) {
+            } else if (harga > current.produk.harga) {
                 current = current.right;
             } else {
                 current = current.left;
@@ -71,7 +74,10 @@ public class BinaryTree02 {
         return result;
     }
 
-    Mahasiswa02 cariMinIPK() {
+    // MODIFIKASI:
+    // Menampilkan produk dengan harga termurah
+    // Produk termurah berada pada node paling kiri BST
+    Produk02 tampilProdukTermurah() {
         if (isEmpty()) {
             return null;
         }
@@ -81,10 +87,10 @@ public class BinaryTree02 {
             current = current.left;
         }
 
-        return current.mahasiswa;
+        return current.produk;
     }
 
-    Mahasiswa02 cariMaxIPK() {
+    Produk02 cariProdukTermahal() {
         if (isEmpty()) {
             return null;
         }
@@ -94,28 +100,30 @@ public class BinaryTree02 {
             current = current.right;
         }
 
-        return current.mahasiswa;
+        return current.produk;
     }
 
-    void tampilMahasiswaIPKdiAtas(double ipkBatas) {
-        tampilMahasiswaIPKdiAtas(root, ipkBatas);
+    // MODIFIKASI:
+    // Menampilkan seluruh produk yang memiliki harga di atas batasHarga
+    void tampilProdukDiAtasHarga(double batasHarga) {
+        tampilProdukDiAtasHarga(root, batasHarga);
     }
 
-    private void tampilMahasiswaIPKdiAtas(Node02 node, double ipkBatas) {
+    private void tampilProdukDiAtasHarga(Node02 node, double batasHarga) {
         if (node != null) {
-            tampilMahasiswaIPKdiAtas(node.left, ipkBatas);
+            tampilProdukDiAtasHarga(node.left, batasHarga);
 
-            if (node.mahasiswa.ipk > ipkBatas) {
-                node.mahasiswa.tampilInformasi();
+            if (node.produk.harga > batasHarga) {
+                node.produk.tampilInformasi();
             }
 
-            tampilMahasiswaIPKdiAtas(node.right, ipkBatas);
+            tampilProdukDiAtasHarga(node.right, batasHarga);
         }
     }
 
     void traversePreOrder(Node02 node) {
         if (node != null) {
-            node.mahasiswa.tampilInformasi();
+            node.produk.tampilInformasi();
             traversePreOrder(node.left);
             traversePreOrder(node.right);
         }
@@ -124,7 +132,7 @@ public class BinaryTree02 {
     void traverseInOrder(Node02 node) {
         if (node != null) {
             traverseInOrder(node.left);
-            node.mahasiswa.tampilInformasi();
+            node.produk.tampilInformasi();
             traverseInOrder(node.right);
         }
     }
@@ -133,8 +141,40 @@ public class BinaryTree02 {
         if (node != null) {
             traversePostOrder(node.left);
             traversePostOrder(node.right);
-            node.mahasiswa.tampilInformasi();
+            node.produk.tampilInformasi();
         }
+    }
+
+    // MODIFIKASI:
+    // Menghitung rata-rata harga seluruh produk dalam BST
+    public double hitungRataRataHarga() {
+        int jumlahProduk = hitungJumlahProduk(root);
+
+        if (jumlahProduk == 0) {
+            return 0;
+        }
+
+        return hitungTotalHarga(root) / jumlahProduk;
+    }
+
+    private double hitungTotalHarga(Node02 node) {
+        if (node == null) {
+            return 0;
+        }
+
+        return node.produk.harga
+                + hitungTotalHarga(node.left)
+                + hitungTotalHarga(node.right);
+    }
+
+    private int hitungJumlahProduk(Node02 node) {
+        if (node == null) {
+            return 0;
+        }
+
+        return 1
+                + hitungJumlahProduk(node.left)
+                + hitungJumlahProduk(node.right);
     }
 
     Node02 getSuccessor(Node02 del) {
@@ -151,7 +191,9 @@ public class BinaryTree02 {
         return successor;
     }
 
-    void delete(double ipk) {
+    // MODIFIKASI:
+    // Penghapusan data dilakukan berdasarkan harga produk
+    void delete(double harga) {
         if (isEmpty()) {
             System.out.println("Binary tree masih kosong");
             return;
@@ -161,13 +203,13 @@ public class BinaryTree02 {
         Node02 current = root;
         boolean isLeftChild = false;
         while (current != null) {
-            if (current.mahasiswa.ipk == ipk) {
+            if (current.produk.harga == harga) {
                 break;
-            } else if (ipk < current.mahasiswa.ipk) {
+            } else if (harga < current.produk.harga) {
                 parent = current;
                 current = current.left;
                 isLeftChild = true;
-            } else if (ipk > current.mahasiswa.ipk) {
+            } else if (harga > current.produk.harga) {
                 parent = current;
                 current = current.right;
                 isLeftChild = false;
@@ -209,7 +251,7 @@ public class BinaryTree02 {
             else { //jika punya 2 anak
                 Node02 successor = getSuccessor(current);
                 System.out.println("Jika 2 anak, current = ");
-                current.mahasiswa.tampilInformasi();
+                current.produk.tampilInformasi();
                 if (current == root) {
                     root = successor;
                 } else if (isLeftChild) {

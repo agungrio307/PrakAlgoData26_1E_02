@@ -1,22 +1,22 @@
 package P14;
 
 public class BinaryTreeArray02 {
-    Mahasiswa02[] dataMahasiswas;
+    Produk02[] dataProduks;
     int idxLast;
 
     public BinaryTreeArray02() {
-        this.dataMahasiswas = new Mahasiswa02[10];
+        this.dataProduks = new Produk02[10];
         this.idxLast = -1;
     }
 
-    void populateData(Mahasiswa02[] dataMahasiswas, int idxLast) {
-        this.dataMahasiswas = dataMahasiswas;
+    void populateData(Produk02[] dataProduks, int idxLast) {
+        this.dataProduks = dataProduks;
         this.idxLast = idxLast;
     }
 
-    void add(Mahasiswa02 data) {
-        if (idxLast + 1 < dataMahasiswas.length) {
-            dataMahasiswas[++idxLast] = data;
+    void add(Produk02 data) {
+        if (idxLast + 1 < dataProduks.length) {
+            dataProduks[++idxLast] = data;
         } else {
             System.out.println("Array binary tree penuh!");
         }
@@ -24,9 +24,9 @@ public class BinaryTreeArray02 {
 
     void traverseInOrder(int idxStart) {
         if (idxStart <= idxLast) {
-            if (dataMahasiswas[idxStart] != null) {
+            if (dataProduks[idxStart] != null) {
                 traverseInOrder(2 * idxStart + 1);
-                dataMahasiswas[idxStart].tampilInformasi();
+                dataProduks[idxStart].tampilInformasi();
                 traverseInOrder(2 * idxStart + 2);     
             }
         }
@@ -34,8 +34,8 @@ public class BinaryTreeArray02 {
 
     void traversePreOrder(int idxStart) {
         if (idxStart <= idxLast) {
-            if (dataMahasiswas[idxStart] != null) {
-                dataMahasiswas[idxStart].tampilInformasi();
+            if (dataProduks[idxStart] != null) {
+                dataProduks[idxStart].tampilInformasi();
                 traversePreOrder(2 * idxStart + 1);
                 traversePreOrder(2 * idxStart + 2);
             }
