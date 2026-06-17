@@ -1,26 +1,26 @@
 package P15;
 
 import java.util.List;
+import java.util.LinkedList;
 import java.util.ArrayList;
 
 public class ContohList02 {
     public static void main(String[] args) {
-        List l = new ArrayList();
+        List<Integer> l = new ArrayList<>();
         l.add(1);
         l.add(2);
         l.add(3);
-        l.add("Cireng");
 
-        System.out.printf("Elemen 0: %d total elemen: %d elemen terakhir: %s\n",
+        System.out.printf("Elemen 0: %d total elemen: %d elemen terakhir: %d\n",
                 l.get(0), l.size(), l.get(l.size() - 1));
 
         l.add(4);
         l.remove(0);
 
-        System.out.printf("Elemen 0: %d total elemen: %d elemen terakhir: %s\n",
+        System.out.printf("Elemen 0: %d total elemen: %d elemen terakhir: %d\n",
                 l.get(0), l.size(), l.get(l.size() - 1));
 
-        List<String> names = new ArrayList<>();
+        LinkedList<String> names = new LinkedList<>();
         names.add("Noureen");
         names.add("Akhleema");
         names.add("Shannum");
@@ -36,5 +36,10 @@ public class ContohList02 {
                 names.get(0), names.size(), names.get(names.size() - 1));
 
         System.out.println("Names: " + names);
+
+        names.push("Mei-mei");
+        System.out.printf("Elemen 0: %s total elemen: %d elemen terakhir: %s\n",
+                names.getFirst(), names.size(), names.getLast());
+        System.out.println("Names: " + names.toString());
     }
 }
