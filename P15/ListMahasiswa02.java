@@ -2,6 +2,8 @@ package P15;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 public class ListMahasiswa02 {
@@ -25,13 +27,21 @@ public class ListMahasiswa02 {
         });
     }
 
-    public int linearSearch(String nim) {
-        for (int i = 0; i < mahasiswas.size(); i++) {
-            if (nim.equals(mahasiswas.get(i).nim)) {
-                return i;
-            }
-        }
-        return -1;
+    public int binarySearch(String nim) {
+        Collections.sort(mahasiswas, Comparator.comparing(mhs -> mhs.nim));
+        return Collections.binarySearch(
+            mahasiswas,
+            new Mahasiswa02(nim, "", ""),
+            Comparator.comparing(mhs -> mhs.nim)
+        );
+    }
+
+    public void sortAscending() {
+        Collections.sort(mahasiswas, Comparator.comparing(mhs -> mhs.nim));
+    }
+
+    public void sortDescending() {
+        Collections.sort(mahasiswas, Comparator.comparing((Mahasiswa02 mhs) -> mhs.nim).reversed());
     }
 
     public static void main(String[] args) {
@@ -45,7 +55,15 @@ public class ListMahasiswa02 {
 
         lm.tampil();
 
-        lm.update(lm.linearSearch("201235"), new Mahasiswa02("201235", "Akhleema Lela", "021xx2"));
+        System.out.println("\nData Ascending:");
+        lm.sortAscending();
+        lm.tampil();
+
+        System.out.println("\nData Descending:");
+        lm.sortDescending();
+        lm.tampil();
+
+        lm.update(lm.binarySearch("201235"), new Mahasiswa02("201235", "Akhleema Lela", "021xx2"));
         System.out.println("");
         lm.tampil();
     }
